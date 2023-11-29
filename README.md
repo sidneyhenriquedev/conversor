@@ -5,8 +5,8 @@ Um simples conversor de moedas desenvolvido com HTML, CSS e JavaScript.
 
 ## Funcionalidades
 
-- Converte valores de uma moeda para outra em tempo real.
-- Utiliza a API de câmbio para obter as taxas de câmbio mais recentes.
+- Converte valores de uma moeda para outra.
+- Não Utiliza API, Feito somente como base de Estudos das linguagens Citadas a Baixo.
 
 ## Como Usar
 
