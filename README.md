@@ -27,7 +27,7 @@ Um simples conversor de moedas desenvolvido com HTML, CSS e JavaScript.
 
 ## Estrutura de Arquivos
 
-- 📁 **img**: Contém as Imagem.
+- 📁 **img**: Contém as Imagens.
 - 📁 **css**: Contém os arquivos CSS.
 - 📁 **js**: Contém os arquivos JavaScript.
 - 📄 **index.html**: Página principal do conversor de moedas.
