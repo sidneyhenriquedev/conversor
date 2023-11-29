@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Libraries Jquery Mask for Formater the inputValue on Document HTML -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- End Jquery Libraries -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="Stylesheet" href="./css/styles.css" />
+    <title>SHS-CONVERSOR</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <img class="logo" src="./img/logo.gif" alt="" />
+
+      <div class="form-conversao">
+        <label id="lbl_de">Converter de:</label>
+        <select id="SelectConvertFrom">
+          <option value="selecione">Selecione a moeda</option>
+          <option value="real">R$ Real Brasileiro</option>
+          <option value="dolar">US$ Dolar Américano</option>
+          <option value="euro">€$ Euro</option>
+          <option value="bitcoin">BTC$ Bitcoin</option>
+          <option value="libra">£$ Libra</option>
+        </select>
+
+        <label id="lbl_para">Converter para:</label>
+        <select id="SelectConvertTo">
+          <option value="selecione">Selecione a moeda</option>
+          <option value="real">R$ Real Brasileiro</option>
+          <option value="dolar">US$ Dolar Américano</option>
+          <option value="euro">€$ Euro</option>
+          <option value="bitcoin">BTC$ Bitcoin</option>
+          <option value="libra">£$ Libra</option>
+        </select>
+
+        <label>Valor:</label>
+        <input
+          id="inputValue"
+          onkeypress="$(this).mask('###00.00', {reverse: true});"
+          type="text"
+          placeholder="Digite o valor"
+        />
+
+        <button onclick="convertMoney()">Converter</button>
+
+        <div class="convertions">
+          <img id="flagsFrom" src="./img/flag_brazil.png" />
+          <label id="nameFrom">Real Brasileiro</label>
+          <p id="convertedValueFrom"><span>0,00</span></p>
+
+          <img class="img_arrow" src="./img/arrow-down.png" alt="" />
+
+          <img id="flagsTo" src="./img/flag_usa.png" alt="" />
+          <label id="nameTo">Dolar americano</label>
+          <p id="ConvertedValueTo"><span>0,00</span></p>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script src="./js/scripts.js"></script>
+</html>
